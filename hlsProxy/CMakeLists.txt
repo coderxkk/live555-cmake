@@ -1,0 +1,3 @@
+
+add_executable(hls_proxy live555HLSProxy.cpp)
+target_link_libraries(hls_proxy liveMedia BasicUsageEnvironment UsageEnvironment groupsock  ws2_32)

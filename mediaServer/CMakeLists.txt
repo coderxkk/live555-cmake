@@ -1,0 +1,3 @@
+
+add_executable(dynamic_rtsp_server live555MediaServer.cpp DynamicRTSPServer.cpp )
+target_link_libraries(dynamic_rtsp_server liveMedia BasicUsageEnvironment UsageEnvironment groupsock  ws2_32)

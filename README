@@ -1,2 +1,18 @@
 For documentation and instructions for building this software,
 see <http://www.live555.com/liveMedia/>
+
+最近接触live555。Live555项目是一个为流媒体提供解决方案的跨平台C++开源项目。根据live555的官方描述：Live555的源代码可以在Unix-like系统（如Linux和Mac OS X）、Windows以及QNX（及其它POSIX兼容系统）等平台上进行编译和运行。
+
+在live555的官方文档`How to configure and build the code on Windows`章节中提到：
+
+`The use of Windows is not recommended. However, if you insist on using Windows, you might be able to build the code in the "Cygwin" environment by doing`
+
+不推荐使用Windows系统。但是，如果你坚持在Windows上开发，你可以通过在“Cygwin”环境中执行相应的操作来构建代码。
+
+我公司不能连接外网，cygwin在没有网络的情况下，不是很好用。我使用mingw生成的Makefile后，make会报/usr/include路径找不到，明显对mingw不友好。
+
+我经常用CMakeLists.txt组织项目，所以我索性维护一个用CMakeLists.txt组织的live555项目。
+
+使用CMakeLists.txt，对Jetbrains Clion用户非常友好。如果有同学也恰好使用Clion并在学习和使用live555，那我非常推荐使用我的项目。
+
+**目前已实现在windows编译。linux未试过。**

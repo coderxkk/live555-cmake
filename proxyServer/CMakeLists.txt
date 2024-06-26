@@ -1,0 +1,3 @@
+
+add_executable(proxy_server live555ProxyServer.cpp)
+target_link_libraries(proxy_server liveMedia BasicUsageEnvironment UsageEnvironment groupsock  ws2_32)
